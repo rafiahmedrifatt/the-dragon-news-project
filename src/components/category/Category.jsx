@@ -7,7 +7,6 @@ const Category = () => {
 
   return (
     <div className="text-center">
-      <h1>All Category</h1>
       <div className="grid grid-cols-1 gap-5 mt-5">
         {categories.map((category) => (
           <NavLink

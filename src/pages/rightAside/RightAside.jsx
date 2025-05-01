@@ -1,9 +1,10 @@
 import React from "react";
+import LoginWith from "../../components/loginwith/LoginWith";
 
 const RightAside = () => {
   return (
     <div>
-      <h2>right aside</h2>
+      <LoginWith />
     </div>
   );
 };

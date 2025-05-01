@@ -12,3 +12,7 @@
   --color-base-200: oklch(95% 0.03 240);
   --color-base-300: oklch(92% 0.04 240);
 }
+
+.active {
+  background-color: rgba(192, 192, 192, 0.814);
+}

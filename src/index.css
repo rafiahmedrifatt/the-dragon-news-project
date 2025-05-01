@@ -1,6 +1,14 @@
-@import "tailwindcss";
-@plugin "daisyui";
 @import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
   font-family: "Sansation", sans-serif;
+}
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+  --color-primary: oklch(55% 0.3 240);
+  --color-secondary: oklch(70% 0.25 200);
+  --color-base-100: oklch(98% 0.02 240);
+  --color-base-200: oklch(95% 0.03 240);
+  --color-base-300: oklch(92% 0.04 240);
 }

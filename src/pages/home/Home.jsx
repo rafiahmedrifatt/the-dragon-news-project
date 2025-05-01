@@ -1,9 +1,10 @@
 import React from "react";
+import { Navigate } from "react-router";
 
 const Home = () => {
   return (
     <div>
-      <h1>This is hom3=3=</h1>
+      <Navigate to="/category/0" />
     </div>
   );
 };

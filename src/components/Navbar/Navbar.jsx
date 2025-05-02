@@ -10,7 +10,9 @@ const Navbar = () => {
         <NavLink to="/">Career</NavLink>
       </div>
       <div className="flex gap-5">
-        <img src="/src/assets/user.png" className="w-10" alt="" />
+        <button>
+          <img src="/src/assets/user.png" className="w-10" alt="" />
+        </button>
         <button className="btn btn-secondary">Login</button>
       </div>
     </div>

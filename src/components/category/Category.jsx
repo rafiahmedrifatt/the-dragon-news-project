@@ -1,14 +1,14 @@
 import React, { use } from "react";
 import { NavLink } from "react-router";
 
-const categoryProvider = fetch("categories.json").then((res) => res.json());
+const categoryProvider = fetch("/categories.json").then((res) => res.json());
 const Category = () => {
   const categories = use(categoryProvider);
 
   return (
     <div className="text-center">
       <div className="grid grid-cols-1 gap-5 mt-5">
-        {categories.map((category) => (
+        {categories?.map((category) => (
           <NavLink
             key={category.id}
             className="btn bg-white border-0 hover:bg-base-200"

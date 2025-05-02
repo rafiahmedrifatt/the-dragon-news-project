@@ -20,13 +20,13 @@ const MainLayout = () => {
         </nav>
       </header>
       <main className="grid grid-cols-12 w-10/12 mx-auto">
-        <section className="left_navbar col-span-3">
+        <section className="left_navbar col-span-3 sticky top-0 h-screen">
           <LeftAside />
         </section>
         <section className="middle_navbar col-span-6">
           <Outlet />
         </section>
-        <section className="right_navbar col-span-3">
+        <section className="right_navbar col-span-3 ">
           <RightAside />
         </section>
       </main>

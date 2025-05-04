@@ -1,7 +1,8 @@
 import { FaEye, FaStar, FaShareAlt, FaBookmark } from "react-icons/fa";
+import { Link } from "react-router";
 
 function CategoryNewsCard({ news }) {
-  const { title, author, image_url, details, rating, total_view } = news;
+  const { id, title, author, image_url, details, rating, total_view } = news;
 
   return (
     <div className="bg-base-100 shadow-md rounded-xl overflow-hidden border">
@@ -43,9 +44,12 @@ function CategoryNewsCard({ news }) {
         <p className="text-sm text-gray-600">
           {details.length > 100 ? `${details.slice(0, 200)}...` : details}
         </p>
-        <button className="text-red-500 font-semibold hover:underline">
+        <Link
+          to={`/news/${id}`}
+          className="text-red-500 font-semibold hover:underline"
+        >
           Read More
-        </button>
+        </Link>
       </div>
 
       {/* Stats (Rating + Views) */}
